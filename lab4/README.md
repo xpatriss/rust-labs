@@ -1,14 +1,14 @@
 # Lab 4
 
-Trzy niezależne kawałki:
+Three separate pieces:
 
-- `divisors` — dzielniki liczby dodatniej w `BTreeSet` z `NonZero<u32>`, z krótkim pomiarem czasu,
-- `assert_sorted` — panika, gdy slice `u32` nie jest posortowany rosnąco,
-- serwer TCP na `127.0.0.1:7878` — klient przysyła długość ścieżki (4 bajty, big-endian) i samą ścieżkę, serwer odsyła nazwy plików z tego katalogu.
+- `divisors` returns the divisors of a positive integer as a `BTreeSet` of `NonZero<u32>`, with a short timing measurement,
+- `assert_sorted` panics when a `&[u32]` is not sorted in ascending order,
+- a TCP server on `127.0.0.1:7878`: the client sends a path length (4 bytes, big-endian) and the path itself, and the server replies with the file names in that directory.
 
-Ćwiczone rzeczy: kolekcje, `NonZero`, obsługa błędów I/O, odczyt i zapis strumienia w kawałkach, testy (także sieciowe, na porcie losowym).
+Covers collections, `NonZero`, I/O errors, reading and writing a stream in chunks, and tests (including network tests on a random port).
 
-`cargo run` startuje serwer i nie kończy się sam. Testy nie zależą od tego procesu:
+`cargo run` starts the server and does not exit on its own. The tests do not depend on that process:
 
 ```
 cargo test

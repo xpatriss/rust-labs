@@ -1,19 +1,18 @@
 # rust-labs
 
-Laboratoria z Rusta z semestru zimowego na Wydziale Matematyki i Nauk Informacyjnych Politechniki Warszawskiej (kierunek Informatyka i Systemy Informacyjne).
+Rust coursework from the winter semester at the Faculty of Mathematics and Information Science, Warsaw University of Technology (Computer Science and Information Systems).
 
-Każdy katalog to osobny crate. W środku jest krótki opis tego, co dany lab ćwiczy.
+Each directory is its own crate. The README inside describes what that lab covers.
 
-| Lab | Temat |
+| Lab | Topic |
 | --- | --- |
-| [lab1](lab1/) | pętle, tablice, wejście-wyjście, losowość |
-| [lab2](lab2/lab2/) | struktury, metody, własność (`String`, slice, `Vec`) |
-| [lab3](lab3/) | enumy, drzewo wyrażeń, różniczkowanie symboliczne |
-| [lab4](lab4/) | kolekcje, pomiary czasu, serwer TCP |
-| [lab5](lab5/) | cechy, generyki, mały język wyrażeń i instrukcji |
-| [lab6](lab6/) | iteratory i domknięcia |
+| [lab1](lab1/) | loops, arrays, I/O, randomness |
+| [lab2](lab2/) | structs, methods, ownership (`String`, slices, `Vec`) |
+| [lab3](lab3/) | enums, expression trees, symbolic differentiation |
+| [lab4](lab4/) | collections, timing, a TCP server |
+| [lab5](lab5/) | traits, generics, a small expression and statement language |
 
-Uruchomienie z katalogu danego labu:
+From a lab directory:
 
 ```
 cargo run

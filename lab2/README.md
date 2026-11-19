@@ -1,10 +1,10 @@
 # Lab 2
 
-Struktura `NumberWithUnit` trzyma wartość zmiennoprzecinkową i jednostkę (`String`). Da się ją zbudować na kilka sposobów, dodać, pomnożyć i podzielić — albo przez zwrócenie nowej wartości, albo przez zmianę w miejscu. Przykład w `main` liczy prędkość z drogi i czasu.
+`NumberWithUnit` stores a floating-point value and a unit (`String`). It can be built in several ways, then added, multiplied, and divided, either by returning a new value or by updating in place. The example in `main` computes speed from distance and time.
 
-Osobno jest struktura krotkowa `DoubleString` oraz dwie funkcje mnożące listę wartości: jedna bierze slice, druga przejmuje `Vec`.
+There is also a tuple struct, `DoubleString`, and two functions that multiply a list of values: one takes a slice, the other takes ownership of a `Vec`.
 
-Ćwiczone rzeczy: `struct`, `impl`, `Clone` i `Default`, różnica między `String` a `&str`, przekazywanie przez wartość i przez referencję.
+Covers `struct`, `impl`, `Clone` and `Default`, `String` versus `&str`, and passing by value versus by reference.
 
 ```
 cargo run
